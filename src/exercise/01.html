@@ -2,6 +2,31 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+  <body>
+    <!-- <div id="root"></div> -->
+
+    <script type="module">
+      /**
+       * extra credit
+      */
+      // create root element
+      const rootElement = document.createElement('div');
+      rootElement.setAttribute('id', 'root');
+      // append the root element to the body
+      document.body.append(rootElement);
+
+
+      // Create the div Element
+      const div = document.createElement('div');
+      // add content to the div element
+      div.textContent = "Hello World";
+      // add class to the div element
+      div.className = "container";
+      //adding the div element under the root element
+      const root = document.querySelector('#root');
+      root.append(div);
+    </script>
+  </body>
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
